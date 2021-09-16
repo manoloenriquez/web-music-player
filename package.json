@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node build/index.js",
     "build": "tsc --project ./ && cd client && npm run build",
-    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/index.ts"
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/index.ts",
+    "vercel-build": "cd client && npm install && npm run build && cd .. && npm run build"
   },
   "keywords": [],
   "author": "",
