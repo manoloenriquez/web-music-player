@@ -5,13 +5,14 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 // import store from './redux/store';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    {/* <Provider store={store}>
+      
+    </Provider> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
